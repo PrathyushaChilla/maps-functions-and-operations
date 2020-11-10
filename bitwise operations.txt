@@ -1,0 +1,84 @@
+program1
+
+package main
+import "fmt"
+func main() {
+var a,b,c int
+ a = 5
+ b = 1
+c = a & b       
+fmt.Println(c)
+ c = a | b      
+fmt.Println(c)
+c = a ^ b       
+fmt.Println(c)
+c = a &^ b      
+fmt.Println(c)
+}
+output
+1
+5
+4
+4
+
+
+
+program2
+
+package main 
+import "fmt"
+func main() { 
+p:= 25
+q:= 21
+result1:= p & q 
+fmt.Printf("Result of p & q = %d", result1) 
+result2:= p | q 
+fmt.Printf("\nResult of p | q = %d", result2) 
+result3:= p ^ q 
+fmt.Printf("\nResult of p ^ q = %d", result3) 
+result4:= p << 1
+fmt.Printf("\nResult of p << 1 = %d", result4) 
+result5:= p >> 1
+fmt.Printf("\nResult of p >> 1 = %d", result5) 
+result6:= p &^ q 
+fmt.Printf("\nResult of p &^ q = %d", result6) 
+}
+output:
+Result of p & q = 17
+Result of p | q = 29
+Result of p ^ q = 12
+Result of p << 1 = 50
+Result of p >> 1 = 12
+Result of p &^ q = 8
+Program exited.
+
+
+
+
+program3
+
+package main
+import "fmt"
+func main() {
+ var a uint = 76	 
+ var b uint = 12	
+ var c uint = 0          
+ c = a & b      
+ fmt.Printf("Line 1 - Value of c is %d\n", c )
+c = a | b      
+ fmt.Printf("Line 2 - Value of c is %d\n", c )
+c = a ^ b      
+fmt.Printf("Line 3 - Value of c is %d\n", c )
+c = a << 2    
+fmt.Printf("Line 4 - Value of c is %d\n", c )
+c = a >> 2    
+fmt.Printf("Line 5 - Value of c is %d\n", c )
+}
+output:
+Line 1 - Value of c is 12
+Line 2 - Value of c is 76
+Line 3 - Value of c is 64
+Line 4 - Value of c is 304
+Line 5 - Value of c is 19
+
+Program exited.
